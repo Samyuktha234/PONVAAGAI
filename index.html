@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pon Vaagai – by Kohila</title>
+  <meta name="description" content="Pon Vaagai by Kohila – Custom handcrafted sarees, kurta sets, and bridal wear in Dindigul, Tamil Nadu. Book your appointment today."/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="gallery.css"/>
+  <link rel="stylesheet" href="form.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Great+Vibes&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ══════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">
+      <img src="images1/logo.png" alt="Pon Vaagai Logo" class="logo-img"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"/>
+      <span style="display:none;font-family:'Cinzel',serif;color:#C9A84C;font-size:1.1rem;letter-spacing:0.15em;">PON VAAGAI</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">Story</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#booking">Book</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#order">Order</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════════════════════════
+       HERO
+  ══════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="mandala m1"></div>
+      <div class="mandala m2"></div>
+      <div class="mandala m3"></div>
+    </div>
+    <div class="particles" id="particles"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Where Every Stitch Tells Your Story!</p>
+      <h1 class="hero-title">PON VAAGAI</h1>
+      <p class="hero-sub">by Kohila</p>
+      <div class="gold-divider"><span>✦</span></div>
+      <p class="hero-tagline">Where Golden Threads Meet Timeless Elegance</p>
+      <div class="hero-cta">
+        <a href="#gallery" class="btn-gold">View Collection</a>
+        <a href="#booking" class="btn-outline">Book Appointment</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       ABOUT
+  ══════════════════════════════════ -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-text reveal">
+        <span class="section-eyebrow">Our Story</span>
+        <h2 class="section-title">Crafted With<br/>Golden Hands</h2>
+        <div class="gold-line"><span>✦</span></div>
+        <p class="about-desc">Every stitch tells a story. At Pon Vaagai, fashion designer Kohila brings decades of passion and artistry to every creation — weaving tradition, elegance and love into garments that make every woman feel like royalty.</p>
+        <p class="about-desc">From bridal sarees to everyday kurtas, each piece is handcrafted with the finest fabrics and embroidered with care — because you deserve nothing less than golden craftsmanship.</p>
+        <div class="about-signature">Kohila</div>
+        <div class="about-stats">
+          <div class="stat"><span class="stat-num">100+</span><span class="stat-label">Happy Clients</span></div>
+          <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Years Experience</span></div>
+          <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Handcrafted</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       GALLERY
+  ══════════════════════════════════ -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Portfolio</span>
+        <h2 class="section-title">The Collection</h2>
+        <div class="gold-line"><span>✦</span></div>
+      </div>
+      <div class="gallery-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="saree">Sarees</button>
+        <button class="filter-btn" data-filter="kurta">Kurta Sets</button>
+        <button class="filter-btn" data-filter="bridal">Bridal</button>
+        <button class="filter-btn" data-filter="blouse">Blouses</button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item reveal" data-cat="saree" data-title="Kanjivaram Silk" data-desc="Pure silk, gold zari border">
+          <img src="images1/saree.jpg" alt="Kanjivaram Silk Saree" loading="lazy"/>
+          <div class="gallery-overlay"><h3>Kanjivaram Silk</h3><p>Pure silk, gold zari border</p></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="kurta" data-title="Ethnic Kurta Set" data-desc="Cotton silk, floral embroidery">
+          <img src="images1/kurta.jpeg" alt="Ethnic Kurta Set" loading="lazy"/>
+          <div class="gallery-overlay"><h3>Ethnic Kurta Set</h3><p>Cotton silk, floral embroidery</p></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="bridal" data-title="Bridal Collection" data-desc="Heavy zari, stone work">
+          <img src="images1/bridalblouse.jpg" alt="Bridal Wear" loading="lazy"/>
+          <div class="gallery-overlay"><h3>Bridal Collection</h3><p>Heavy zari, stone work</p></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="blouse" data-title="Mirror Work Blouse" data-desc="Hand embroidered mirrors">
+          <img src="images1/blouse.jpg" alt="Designer Blouse" loading="lazy"/>
+          <div class="gallery-overlay"><h3>Mirror Work Blouse</h3><p>Hand embroidered mirrors</p></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="kurta" data-title="Anarkali Set" data-desc="Georgette, sequin work">
+          <img src="images1/anarkali.jpeg" alt="Anarkali Set" loading="lazy"/>
+          <div class="gallery-overlay"><h3>Anarkali Set</h3><p>Georgette, sequin work</p></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="kurta" data-title="Handloom Cotton" data-desc="Natural dye, traditional weave">
+          <img src="images1/kurta1.jpg" alt="Handloom Cotton" loading="lazy"/>
+          <div class="gallery-overlay"><h3>Handloom Cotton</h3><p>Natural dye, traditional weave</p></div>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox">
+        <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+        <button class="lb-close" id="lbClose">✕</button>
+        <button class="lb-prev"  id="lbPrev">‹</button>
+        <button class="lb-next"  id="lbNext">›</button>
+        <div class="lb-content">
+          <img id="lbImg" src="" alt=""/>
+          <p id="lbCaption"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       PRICING
+  ══════════════════════════════════ -->
+  <section id="pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Packages</span>
+        <h2 class="section-title">Choose Your Package</h2>
+        <div class="gold-line"><span>✦</span></div>
+      </div>
+      <div class="pricing-grid reveal">
+        <div class="pricing-card">
+          <p class="plan-name">Essential</p>
+          <p class="plan-price">₹299–₹799<span>/piece</span></p>
+          <p class="plan-desc">Perfect for everyday elegant wear</p>
+          <ul class="plan-features">
+            <li>1 Custom Outfit</li>
+            <li>Basic Embroidery</li>
+            <li>2 Fittings Included</li>
+            <li>2 Day Delivery</li>
+            <li>Cotton / Linen Fabric</li>
+            <li>Normal blouse within 1 hour</li>
+          </ul>
+          <a href="#booking" class="btn-outline full-w">Book Now</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="feat-badge">MOST POPULAR</div>
+          <p class="plan-name">Signature</p>
+          <p class="plan-price">₹999–₹2499<span>/piece</span></p>
+          <p class="plan-desc">Artisan craftsmanship for special moments</p>
+          <ul class="plan-features">
+            <li>2 Custom Outfits</li>
+            <li>Advanced Embroidery</li>
+            <li>4 Fittings Included</li>
+            <li>Priority Delivery</li>
+            <li>Silk / Georgette Fabric</li>
+            <li>Designer Blouse</li>
+          </ul>
+          <a href="#booking" class="btn-gold full-w">Book Now</a>
+        </div>
+        <div class="pricing-card">
+          <p class="plan-name">Bridal</p>
+          <p class="plan-price">starts from ₹2499<span>/set</span></p>
+          <p class="plan-desc">Complete bridal trousseau package</p>
+          <ul class="plan-features">
+            <li>Full Bridal Set</li>
+            <li>Zari &amp; Stone Work</li>
+            <li>Unlimited Fittings</li>
+            <li>Priority Delivery</li>
+            <li>Pure Silk Fabric</li>
+            <li>Home Visit Available</li>
+          </ul>
+          <a href="#booking" class="btn-outline full-w">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       BOOKING — sends email via Formspree
+       STEP: Replace YOUR_BOOKING_FORM_ID with your Formspree form ID
+  ══════════════════════════════════ -->
+  <section id="booking">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Appointments</span>
+        <h2 class="section-title">Book Your Visit</h2>
+        <div class="gold-line"><span>✦</span></div>
+      </div>
+      <div class="form-box reveal">
+        <form id="bookingForm" novalidate>
+          <!-- Formspree hidden config -->
+          <input type="hidden" name="_subject" value="📅 New Appointment Booking – Pon Vaagai"/>
+          <input type="hidden" name="_template" value="table"/>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-input" name="name" placeholder="Your full name" required/>
+              <span class="form-err">Please enter your name</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" class="form-input" name="phone" placeholder="+91 00000 00000" required/>
+              <span class="form-err">Please enter your phone</span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Preferred Date</label>
+              <input type="date" class="form-input" name="preferred_date" required/>
+              <span class="form-err">Please select a date</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Outfit Type</label>
+              <select class="form-select" name="outfit_type" required>
+                <option value="">Select type</option>
+                <option>Saree</option>
+                <option>Kurta Set</option>
+                <option>Anarkali</option>
+                <option>Blouse</option>
+                <option>Bridal Wear</option>
+                <option>Other</option>
+              </select>
+              <span class="form-err">Please select outfit type</span>
+            </div>
+          </div>
+          <div class="form-group full">
+            <label class="form-label">Special Requirements</label>
+            <textarea class="form-textarea" name="notes" placeholder="Tell us about your dream outfit..."></textarea>
+          </div>
+          <button type="submit" class="btn-gold full-w submit-btn" id="bookingBtn">✦ Confirm Appointment ✦</button>
+        </form>
+        <div class="form-success" id="bookingSuccess" style="display:none;">
+          <div class="success-icon">✦</div>
+          <h3>Appointment Confirmed!</h3>
+          <p>Thank you! Kohila will personally contact you within 24 hours.</p>
+          <a href="#booking" class="btn-outline" onclick="resetFormUI('bookingForm','bookingSuccess');return false;">Book Another</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════════ -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Reviews</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="gold-line"><span>✦</span></div>
+      </div>
+      <div class="testimonials-grid reveal">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Kohila stitched my bridal saree blouse beautifully. The fitting was perfect and the embroidery was stunning. Highly recommend!"</p>
+          <div class="testimonial-author">
+            <span class="author-name">Priya R.</span>
+            <span class="author-label">Bride, Dindigul</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"I ordered a custom kurta set and was amazed by the quality. The fabric and embroidery were exactly as I imagined. Will order again!"</p>
+          <div class="testimonial-author">
+            <span class="author-name">Meena S.</span>
+            <span class="author-label">Regular Client</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Excellent service! Kohila understood my style perfectly and delivered ahead of schedule. The Anarkali was a showstopper at the function."</p>
+          <div class="testimonial-author">
+            <span class="author-name">Lakshmi V.</span>
+            <span class="author-label">Salem</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       ORDER — sends email via Formspree
+       STEP: Replace YOUR_ORDER_FORM_ID with your Formspree form ID
+  ══════════════════════════════════ -->
+  <section id="order">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Online Orders</span>
+        <h2 class="section-title">Place Your Order</h2>
+        <div class="gold-line"><span>✦</span></div>
+      </div>
+      <div class="form-box reveal">
+        <form id="orderForm" novalidate>
+          <!-- Formspree hidden config -->
+          <input type="hidden" name="_subject" value="🛍️ New Order – Pon Vaagai"/>
+          <input type="hidden" name="_template" value="table"/>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-input" name="name" placeholder="Your full name" required/>
+              <span class="form-err">Please enter your name</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" class="form-input" name="phone" placeholder="+91 00000 00000" required/>
+              <span class="form-err">Please enter your phone</span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Outfit Type</label>
+              <select class="form-select" name="outfit_type" required>
+                <option value="">Select type</option>
+                <option>Saree</option>
+                <option>Kurta Set</option>
+                <option>Anarkali</option>
+                <option>Blouse</option>
+                <option>Bridal Wear</option>
+              </select>
+              <span class="form-err">Please select outfit type</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Package</label>
+              <select class="form-select" name="package" required>
+                <option value="">Select package</option>
+                <option>Essential – ₹299–₹799</option>
+                <option>Signature – ₹999–₹2499</option>
+                <option>Bridal – starts from ₹2499</option>
+              </select>
+              <span class="form-err">Please select a package</span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Fabric Preference</label>
+              <select class="form-select" name="fabric">
+                <option value="">Select fabric</option>
+                <option>Silk</option>
+                <option>Cotton</option>
+                <option>Georgette</option>
+                <option>Linen</option>
+                <option>Chiffon</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Color Preference</label>
+              <input type="text" class="form-input" name="color" placeholder="e.g. Deep maroon, Gold"/>
+            </div>
+          </div>
+          <div class="form-group full">
+            <label class="form-label">Measurements &amp; Notes</label>
+            <textarea class="form-textarea" name="measurements_and_notes" placeholder="Share your measurements and any special design requests..."></textarea>
+          </div>
+          <button type="submit" class="btn-gold full-w submit-btn" id="orderBtn">✦ Place Order ✦</button>
+        </form>
+        <div class="form-success" id="orderSuccess" style="display:none;">
+          <div class="success-icon">✦</div>
+          <h3>Order Received!</h3>
+          <p>Kohila will personally contact you within 24 hours to confirm your order.</p>
+          <a href="#order" class="btn-outline" onclick="resetFormUI('orderForm','orderSuccess');return false;">Place Another</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       CONTACT
+  ══════════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Find Us</span>
+        <h2 class="section-title">Visit Our Studio</h2>
+        <div class="gold-line"><span>✦</span></div>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <h3 class="contact-heading">Get In Touch</h3>
+          <div class="citem">
+            <span class="cicon">📍</span>
+            <div><span class="clabel">Studio Address</span><span class="cvalue">34, Raj Nagar,<br/>Dindigul, Tamil Nadu – 624005</span></div>
+          </div>
+          <div class="citem">
+            <span class="cicon">📞</span>
+            <div><span class="clabel">Phone</span><span class="cvalue"><a href="tel:+919488252787" style="color:inherit;">+91 94882 52787</a></span></div>
+          </div>
+          <div class="citem">
+            <span class="cicon">✉️</span>
+            <div><span class="clabel">Email</span><span class="cvalue"><a href="mailto:ponvaagai1111@gmail.com" style="color:inherit;">ponvaagai1111@gmail.com</a></span></div>
+          </div>
+          <div class="citem">
+            <span class="cicon">🕐</span>
+            <div><span class="clabel">Working Hours</span><span class="cvalue">Mon – Sat: 10am – 7pm<br/>Sunday: By Appointment</span></div>
+          </div>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
+            <a href="https://wa.me/919488252787" class="whatsapp-btn" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+            <a href="https://instagram.com/samyuktha__sk" class="instagram-btn" target="_blank" rel="noopener">📸 Follow on Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FOOTER
+  ══════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="images1/logo.png" alt="Pon Vaagai Logo" class="logo-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"/>
+        <span style="display:none;font-family:'Cinzel',serif;color:#C9A84C;font-size:1.2rem;letter-spacing:0.15em;">PON VAAGAI</span>
+      </div>
+      <p class="footer-copy">
+        © 2026 Pon Vaagai. Built with ❤️ by Samyuktha<br/>
+        <span>ponvaagai1111@gmail.com</span>
+      </p>
+      <div class="footer-socials">
+        <a href="https://instagram.com/samyuktha__sk" target="_blank" rel="noopener" title="Instagram">✦</a>
+        <a href="https://wa.me/919488252787" target="_blank" rel="noopener" title="WhatsApp">▶</a>
+      </div>
+    </div>
+    <p class="footer-tagline">Elegance Woven in Gold</p>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
